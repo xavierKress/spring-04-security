@@ -11,6 +11,7 @@ public class routingConfig implements WebMvcConfigurer {
     public void addViewControllers(ViewControllerRegistry registry) {
         registry.addViewController("/home").setViewName("home");
         registry.addViewController("/securedPage").setViewName("securedPage");
+        registry.addViewController("/securedAdminPage").setViewName("securedAdminPage");
         registry.addViewController("/").setViewName("home");
         registry.addViewController("/login").setViewName("login");
     }
